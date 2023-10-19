@@ -15,6 +15,7 @@ namespace BlazorDemoCastra
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddSingleton<WeatherForecastService>();
+            builder.Services.AddSingleton<CounterSession>();
 
             var app = builder.Build();
 
